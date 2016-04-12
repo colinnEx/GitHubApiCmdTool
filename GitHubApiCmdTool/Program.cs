@@ -27,7 +27,7 @@
 
         static async Task<User> GetUser()
         {
-            var github = new GitHubClient(new ProductHeaderValue("GitHubApiCmdTool"));
+            var github = new GitHubClient(new Octokit.ProductHeaderValue("GitHubApiCmdTool"));
             return await github.User.Get("colinnEx");
         }
     }
